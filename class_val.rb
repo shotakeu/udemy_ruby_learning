@@ -9,13 +9,20 @@ class Car
   def hello
     puts "Hello! I am #{@name}. #{@@count} instance(s)"
   end
+
+  def self.info
+    puts "#{@@count} instance(s)"
+  end
+
 end
 
 kitt = Car.new('Kitt')
-kitt.hello
+# kitt.hello
+Car.info
 
 karr = Car.new('Karr')
-karr.hello
-
+# karr.hello
+Car.info
 takeuchi = Car.new('takeuchi')
-takeuchi.hello
+# takeuchi.hello
+Car.info
