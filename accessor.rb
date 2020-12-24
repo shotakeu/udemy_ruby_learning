@@ -7,23 +7,24 @@ class Car
     @name = name
   end
   
-  def hello
-    puts "Hello I am #{@name}."
+  def say
+    hello
   end
 
-  # def name
-  #   @name
-  # end
+  private
+    def hello
+      puts "Hello I am #{@name}."
+    end
 
-  # def name=(value)
-  #   @name = value
-  # end
+    def hello2
+    end
 end
 
 car = Car.new('Kitt')
 # car.hello
 # puts car.name
 car.name = 'Nakamura'
+car.say
 # puts car.name
 
 # karr = Car.new('karr')
